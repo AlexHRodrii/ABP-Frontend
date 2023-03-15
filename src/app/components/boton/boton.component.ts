@@ -8,6 +8,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class BotonComponent {
   @Input() texto: string = '';
   @Input() fontSize: string = '';
+  @Input() font: string = '';
+  @Input() height: string = '';
+  @Input() width: string = '';
   @Input() colorLetra: string = '';
   @Input() colorFondo: string = '';
   @Input() borde: string = '';
