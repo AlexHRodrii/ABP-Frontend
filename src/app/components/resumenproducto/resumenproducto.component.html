@@ -1,0 +1,38 @@
+<style>*{border:1px solid red}</style>
+<div class="container" id="resumenproducto">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-between">
+      <div class="col-md-2">
+        <div class="row">
+          <div class="col-md-auto">
+            <img id="foto" src={{foto}}>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-auto">
+        <div class="row">
+          <div class="col-md-auto"><app-texto texto={{titulo}} [sizeTexto]="2" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'bold'"></app-texto></div>
+        </div>
+        <div class="row">
+          <div class="col-md-auto"><app-texto texto="P.V.P:" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto></div>
+          <div class="col-md-auto"><app-texto texto="{{precio}} €" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto></div>
+        </div>
+        <div class="row">
+          <div class="col-md-auto"><app-texto texto="Cantidad:" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto></div>
+          <div class="col-md-auto"><app-texto texto="x {{cantidad}}" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto></div>
+        </div>
+      </div>
+      <div class="col-md-2 align-self-end">
+        <app-boton [fontSize]="'13px'"
+                   [font]="'Arial, sans-serif'"
+                   [colorLetra]="'white'"
+                   [colorFondo]="'#66806A'"
+                   [height]="'2rem'"
+                   [width]="'4rem'"
+                   [borde]="'oranged'"
+                   (click)="onClick.emit()"
+                   [texto]= "'Eliminar'"></app-boton>
+      </div>
+    </div>
+  </div>
+</div>
