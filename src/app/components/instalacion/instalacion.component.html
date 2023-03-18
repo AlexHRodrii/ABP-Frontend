@@ -1,0 +1,101 @@
+<div class="detalleInstalacion">
+  <div class="calendar">
+    <h2 class="title">Calendario de reservas</h2>
+    <hr>
+    <div class="month">
+      <h3>Marzo 2023</h3>
+    </div>
+    <div class="weekdays">
+      <span>Lun</span>
+      <span>Mar</span>
+      <span>Mie</span>
+      <span>Jue</span>
+      <span>Vie</span>
+      <span>Sab</span>
+      <span>Dom</span>
+    </div>
+    <hr>
+    <div class="days">
+      <span class="day pastweek">27</span>
+      <span class="day pastweek">28</span>
+      <span class="day">1</span>
+      <span class="day">2</span>
+      <span class="day">3</span>
+      <span class="day">4</span>
+      <span class="day">5</span>
+      <span class="day">6</span>
+      <span class="day">7</span>
+      <span class="day">8</span>
+      <span class="day">9</span>
+      <span class="day">10</span>
+      <span class="day">11</span>
+      <span class="day">12</span>
+      <span class="day">13</span>
+      <span class="day">14</span>
+      <span class="day">15</span>
+      <span class="day">16</span>
+      <span class="day">17</span>
+      <span class="day">18</span>
+      <span class="day">19</span>
+      <span class="day">20</span>
+      <span class="day">21</span>
+      <span class="day">22</span>
+      <span class="day">23</span>
+      <span class="day">24</span>
+      <span class="day">25</span>
+      <span class="day">26</span>
+      <span class="day">27</span>
+      <span class="day">28</span>
+      <span class="day">29</span>
+      <span class="day">30</span>
+      <span class="day">31</span>
+      <span class="day nextweek">1</span>
+      <span class="day nextweek">2</span>
+    </div>
+    <hr>
+    <div class="hours">
+      <span class="hour">8:00</span>
+      <span class="hour">10:00</span>
+      <span class="hour">12:00</span>
+      <span class="hour">14:00</span>
+    </div>
+    <div class="hours">
+      <span class="hour">16:00</span>
+      <span class="hour">18:00</span>
+      <span class="hour">20:00</span>
+      <span class="hour">22:00</span>
+    </div>
+    <hr>
+    <div class="botonReserva">
+      <app-boton [fontSize]="'40'" [font]="'Arial, sans-serif'" [colorLetra]="'black'" [colorFondo]="'orange'" [height]="'50px'"
+      [width]="'100px'" [borde]="'oranged'" (onClick)="reservar()" [texto]="'Reservar'"></app-boton>
+    </div>
+  </div>
+  <div class="instalacion">
+    <div class="titulo container">
+      <app-texto texto="Pista de pádel" [sizeTexto]="3" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto>
+    </div>
+    <div class="detalles">
+      <div class="descripcion container">
+        <app-texto class="detallesTitulo" texto="Descripción" [sizeTexto]="2" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto>
+        <br>
+        <app-texto texto="Esta es la descripción de la Pista de pádel" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto>
+      </div>
+      <div class="deporte container">
+        <app-texto class="detallesTitulo" texto="Deporte" [sizeTexto]="2" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto>
+        <br>
+        <app-texto texto="Pádel" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto>
+      </div>
+      <div class="precio container">
+        <app-texto class="detallesTitulo" texto="Precio por hora" [sizeTexto]="2" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto>
+        <br>
+        <app-texto texto="7,95€" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto>
+      </div>
+    </div>
+    <div class="detalles">
+      <img class="instalaccionImagen" src="assets/images/pistaPadel.jpg" alt="imagen">
+      <img class="instalaccionImagen" src="assets/images/pistaPadel2.jpg" alt="imagen">
+    </div>
+  </div>
+</div>
+
