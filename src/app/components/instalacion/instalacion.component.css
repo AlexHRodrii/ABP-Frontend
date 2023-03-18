@@ -90,6 +90,10 @@ h2.title {
   justify-content: center;
 }
 
+.instalacion {
+  background-color: antiquewhite;
+}
+
 .detalles {
   display: grid;
   grid-template-columns: 1fr 1fr;
