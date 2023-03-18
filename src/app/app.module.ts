@@ -7,7 +7,6 @@ import { BotonComponent } from './components/boton/boton.component';
 import { InputComponent } from './components/input/input.component';
 import { TextoComponent } from './components/texto/texto.component';
 import { ImagePickerComponent } from './components/imagepicker/imagepicker.component';
-import { NgpImagePickerModule } from 'ngp-image-picker';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { NgpImagePickerModule } from 'ngp-image-picker';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgpImagePickerModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
