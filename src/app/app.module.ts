@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { BotonComponent } from './components/boton/boton.component';
 import { InputComponent } from './components/input/input.component';
 import { TextoComponent } from './components/texto/texto.component';
+import { ImagePickerComponent } from './components/imagepicker/imagepicker.component';
+import { NgpImagePickerModule } from 'ngp-image-picker';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BotonComponent
-    TextoComponent
-    InputComponent
+    BotonComponent,
+    TextoComponent,
+    InputComponent,
+    ImagePickerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgpImagePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
