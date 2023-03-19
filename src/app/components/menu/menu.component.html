@@ -1,0 +1,51 @@
+<div *ngIf="isUserLogged; then userLogged else userNotLogged"></div>
+<ng-template #userLogged>
+  <nav class="navMenu">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-2">
+        <img style="width: 90%;" src="assets/logo.png" alt="Application logo">
+      </div>
+      <div class="col-md-auto">
+        <a routerLink="/" routerLinkActive="activeItem">
+          <app-typo fontSize="1.5rem" data="Inicio"></app-typo>
+        </a>
+      </div>
+      <div class="col-md-auto">
+        <a routerLink="/example" routerLinkActive="activeItem">
+          <app-typo fontSize="1.5rem" data="Tienda"></app-typo>
+        </a>
+      </div>
+      <div class="col-md-auto">
+        <a routerLink="/example" routerLinkActive="activeItem">
+          <app-typo fontSize="1.5rem" data="Instalaciones"></app-typo>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <div class="row justify-content-end align-items-center me-4 gap-3">
+          <div class="col-md-auto">
+            <app-typo style="background-color: #FFFFFF; padding-left: 6px; padding-right: 6px; border-radius: 50%"
+                      fontWeight="bold" [data]="itemsInCart.toString()"></app-typo>
+            <a routerLink="/example" routerLinkActive="activeItem">
+              <i class="fa-solid fa-cart-shopping" style="font-size: 3rem; cursor: pointer"></i>
+            </a>
+          </div>
+          <div class="col-md-auto">
+            <div class="logoutButton gap-2">
+              <img src="assets/avatar.png" alt="User preview" width=50>
+              <app-typo fontSize="1.2rem" data="Cerrar sesión"></app-typo>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</ng-template>
+<ng-template #userNotLogged>
+  <nav class="navMenu">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-2">
+        <img style="width: 90%;" src="assets/logo.png" alt="Application logo">
+      </div>
+    </div>
+  </nav>
+</ng-template>
