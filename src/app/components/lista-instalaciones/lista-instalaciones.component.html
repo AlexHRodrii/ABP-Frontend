@@ -1,0 +1,14 @@
+<div class="instalaciones">
+  <div class="instalacionesTitle">
+    <div class="d-flex justify-content-center align-items-center p-3"><app-typo data="Instalaciones" [fontSize]="'40px'" fontColor="black" [fontWeight]="'normal'"></app-typo></div>
+    <div class="d-flex justify-content-center align-items-center p-3"><app-typo data="Disponemos de una gran variedad de instalaciones disponibles para que disfrutes del deporte" [fontSize]="'20px'" fontColor="gray" [fontWeight]="'normal'"></app-typo></div>
+  </div>
+  <div class="instalacionesList" style="padding: 10px; background-color: #B4C6A6">
+    <div class="w-100" *ngFor="let i of [0, 1, 2, 3]">
+      <app-custom-card
+        [headers]="['#Novedad']"
+        cardImageURL="https://www.padeladdict.com/wp-content/uploads/2022/10/wilson-se-asocia-con-padel-galis-para-construir-pistas-de-padel-en-todo-el-mundo-portada.jpg">
+      </app-custom-card>
+    </div>
+  </div>
+</div>

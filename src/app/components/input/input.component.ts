@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-export type AvailableTypes = 'text' | 'date' | 'number' | 'email';
+export type AvailableTypes = 'text' | 'date' | 'number' | 'email' | 'password';
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',

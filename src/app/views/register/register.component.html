@@ -1,0 +1,75 @@
+<div class="container-fluid content p-0">
+  <div class="row">
+    <a routerLink="/">
+      <img class="logo" src="assets/logo.png" alt="Application logo">
+    </a>
+    <div class="col-md-6 align-self-center justify-content-center">
+      <img style="width: 80%" src="assets/register_image.png" alt="Register asset">
+    </div>
+    <div class="col-md-6 whiteCard">
+      <div class="row mt-4 justify-content-center align-items-center">
+        <div style="text-align: center" class="col-md-10">
+          <app-typo data="¡Bienvenido al equipo!"
+                    fontSize="3.5rem" fontWeight="bold" fontFamily="Barlow Condensed"></app-typo>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div style="text-align: center" class="col-md-10">
+          <app-typo
+            data="Introduce tus datos para completar el proceso de registro y poder disfutar de todas las ventajas"
+            fontSize="1.2rem" fontWeight="normal" fontFamily="Montserrat" fontColor="#82888C"></app-typo>
+        </div>
+      </div>
+      <div class="row mt-4 justify-content-center align-items-center">
+        <div style="text-align: center" class="col-md-2">
+          <img src="assets/avatar.png" alt="avatar" style="width: 100%;">
+        </div>
+      </div>
+      <div class="row mt-3 justify-content-evenly align-items-center">
+        <div class="col-md-5">
+          <app-input title="Nombre" name="Nombre" width="100%" type="text"
+                     placeholder="John"></app-input>
+        </div>
+        <div class="col-md-5">
+          <app-input title="Apellidos" name="Apellidos" width="100%" type="text"
+                     placeholder="Doe"></app-input>
+        </div>
+      </div>
+      <div class="row mt-3 justify-content-evenly align-items-center">
+        <div class="col-md-5">
+          <app-input title="DNI" name="DNI" width="100%" type="text"
+                     placeholder="00000000X"></app-input>
+        </div>
+        <div class="col-md-5">
+          <app-input title="Teléfono móvil" name="Teléfono móvil" width="100%" type="text"
+                     placeholder="622345567"></app-input>
+        </div>
+      </div>
+      <div class="row mt-3 justify-content-evenly align-items-center">
+        <div class="col-md-5">
+          <app-input title="Fecha de nacimiento" name="Fecha de nacimiento" width="100%" type="date"
+                     placeholder="01/01/1990"></app-input>
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+      <div class="row mt-5 justify-content-evenly align-items-center">
+        <div class="col-md-5">
+          <app-input title="Dirección de correo" name="Dirección de correo" width="100%" type="email"
+                     placeholder="johndoe@example.com"></app-input>
+        </div>
+        <div class="col-md-5">
+          <app-input title="Contraseña" name="Contraseña" width="100%" type="password"
+                     placeholder="**********"></app-input>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-center align-items-center">
+        <div class="col-md-11">
+          <app-button fontFamily="Montserrat" textColor="#000000" backgroundColor="#FFC286"
+                      buttonText="Completar registro"
+                      buttonWidth="100%" fontSize="1.2rem"></app-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
