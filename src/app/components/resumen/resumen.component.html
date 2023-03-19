@@ -8,8 +8,9 @@
 <div class="container">
   <div class="row">
     <div class="col" *ngIf=" totalquantity > 0; else loggedOut">
-      <div *ngfor="let objeto of contador">
-      <app-resumencomponente photo=objeto.photo [quantity]=objeto.quantity title=objeto.name [price]=objeto.price></app-resumencomponente>
+
+      <div *ngFor="let objeto of this.todo">
+      <app-resumencomponente photo=objeto.Photo quantity=objeto.Quantity title=objeto.Nombre price=objeto.Price></app-resumencomponente>
       </div>
     </div>
     <ng-template #loggedOut>
