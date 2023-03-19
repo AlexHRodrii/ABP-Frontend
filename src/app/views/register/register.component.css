@@ -1,0 +1,23 @@
+.content {
+  height: 100vh;
+  background-color: #B4C6A6;
+}
+
+.whiteCard {
+  height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.centeredRow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 15vw;
+}
