@@ -11,6 +11,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { CustomCardComponent } from './components/custom-card/custom-card.component';
 import { ResumenProductoComponent } from './components/resumenproducto/resumenproducto.component';
 import { HomeComponent } from './views/home/home.component';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './views/home/home.component';
     CustomCardComponent,
     ResumenProductoComponent,
     ImagePickerComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
