@@ -1,2 +1,4 @@
-<label>{{ title }}</label><br>
-<input type="{{ type }}" name="{{ name }}" [placeholder]="placeholder" pattern="{{ validation }}">
+<div class="input-container" [style.width]="width">
+  <label class="input-label">{{ title }}</label>
+  <input type="{{ type }}" name="{{ name }}" [placeholder]="placeholder" pattern="{{ validation }}">
+</div>
