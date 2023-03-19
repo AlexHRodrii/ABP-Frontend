@@ -3,20 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BotonComponent } from './components/boton/boton.component';
+import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
-import { TextoComponent } from './components/texto/texto.component';
-import { ResumenProductoComponent } from './components/resumenproducto/resumenproducto.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TypoComponent } from './components/typo/typo.component';
+import { MenuComponent } from './menu/menu.component';
+import { CustomCardComponent } from './custom-card/custom-card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BotonComponent,
-    TextoComponent,
+    ButtonComponent,
+    TypoComponent,
     InputComponent,
-    ResumenProductoComponent
+    MenuComponent,
+    CustomCardComponent
   ],
   imports: [
     BrowserModule,
