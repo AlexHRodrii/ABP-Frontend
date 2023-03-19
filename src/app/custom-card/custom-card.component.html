@@ -1,0 +1,33 @@
+<div class="customCard col-md-2 col-sm-3">
+  <div class="row">
+    <div class="col-md-12">
+      <img class="image" [src]="cardImageURL" alt="Example image" width="100%">
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-11 align-self-center">
+      <div class="row mt-3">
+        <div class="col-md-auto">
+          <app-typo *ngFor="let header of headers" [data]="header + '&nbsp;&nbsp;&nbsp;'" [fontSize]="'0.8rem'"
+                    [fontWeight]="'bold'" [fontColor]="'#002e78'"></app-typo>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col-md-auto">
+          <app-typo [data]="cardTitle" [fontFamily]="'Barlow Condensed'" [fontSize]="'2.5rem'"></app-typo>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col-md-auto">
+          <app-typo [data]="cardData" [fontSize]="'0.8rem'" [fontColor]="'#82888C'"></app-typo>
+        </div>
+      </div>
+      <div class="row mt-3 mb-3">
+        <div class="col-md-auto">
+          <app-button buttonText="Conoce más" textColor="#000000" backgroundColor="#FFC286"
+                      (onClick)="goToURL('/')"></app-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
