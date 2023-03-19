@@ -8,6 +8,8 @@ import { InputComponent } from './components/input/input.component';
 import { TypoComponent } from './components/typo/typo.component';
 import { MenuComponent } from './menu/menu.component';
 import { CustomCardComponent } from './custom-card/custom-card.component';
+import { ListaProductosComponent } from './components/lista-productos/lista-productos.component';
+import { ListaInstalacionesComponent } from './components/lista-instalaciones/lista-instalaciones.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CustomCardComponent } from './custom-card/custom-card.component';
     TypoComponent,
     InputComponent,
     MenuComponent,
-    CustomCardComponent
+    CustomCardComponent,
+    ListaProductosComponent,
+    ListaInstalacionesComponent
   ],
   imports: [
     BrowserModule,
