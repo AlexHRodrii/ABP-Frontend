@@ -1,0 +1,75 @@
+<style>*{border:1px solid red}</style>
+<div>
+  <app-typo [data]="'Resumen de compra&nbsp;&nbsp;'" [fontSize]="'2rem'"
+            [fontWeight]="'bold'"></app-typo>
+  <app-typo data="Total productos {{contador}}" [fontSize]="'1rem'"></app-typo>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col" *ngIf=" totalquantity > 0; else loggedOut">
+
+      <div *ngFor="let objeto of this.todo">
+      <app-resumencomponente photo=objeto.Photo quantity=objeto.Quantity title=objeto.Nombre price=objeto.Price></app-resumencomponente>
+      </div>
+    </div>
+    <ng-template #loggedOut>
+      <div class="col">
+      <app-typo [data]="'No se ha comprado ningún articulo'" [fontSize]="'1rem'"
+                [fontWeight]="'bold'"></app-typo>
+      </div>
+    </ng-template>
+    <div class="col">
+      <div class="customCard col-md-2 col-sm-3">
+        <div class="row">
+          <div class="col-md-12">
+            <app-typo  [data]="'Resumen de compra'" [fontFamily]="'Barlow Condensed'" [fontSize]="'2.5rem'"></app-typo>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-11 align-self-center">
+            <div class="row mt-3">
+              <div class="col-md-auto">
+                <app-typo [data]="'P.V.P.:'" [fontSize]="'0.8rem'"
+                          [fontWeight]="'bold'" [fontColor]="'#002e78'"></app-typo>
+                <app-typo data="{{preccant}} €" [fontSize]="'0.8rem'"
+                          [fontWeight]="'bold'" [fontColor]="'#002e78'"></app-typo>
+              </div>
+            </div>
+            <div class="row mt-1">
+              <div class="col-md-auto">
+                <app-typo [data]="'Impuestos y gastos:'" [fontSize]="'0.8rem'"
+                          [fontWeight]="'bold'" [fontColor]="'#002e78'"></app-typo>
+                <app-typo data="{{impuestos}} €" [fontSize]="'0.8rem'"
+                          [fontWeight]="'bold'" [fontColor]="'#002e78'"></app-typo>
+              </div>
+            </div>
+            <div class="row mt-1">
+              <div class="col-md-auto">
+                <app-typo [data]="'Gastos de envío:'" [fontSize]="'0.8rem'"
+                          [fontWeight]="'bold'" [fontColor]="'#002e78'"></app-typo>
+                <app-typo data="{{gastos}} €" [fontSize]="'0.8rem'"
+                          [fontWeight]="'bold'" [fontColor]="'#002e78'"></app-typo>
+              </div>
+            </div>
+            <hr size="8em" color="#000000" />
+            <div class="row mt-3">
+              <div class="col-md-auto">
+                <app-typo [data]="'Total a pagar:'" [fontSize]="'0.8rem'"
+                          [fontWeight]="'bold'" [fontColor]="'#002e78'"></app-typo>
+                <app-typo data="{{total}} €" [fontSize]="'0.8rem'"
+                          [fontWeight]="'bold'" [fontColor]="'#002e78'"></app-typo>
+              </div>
+            </div>
+            <div class="row mt-3 mb-3 align-self-center">
+              <div class="col-md-auto align-self-center">
+                <app-button buttonText="Completar Pedido" textColor="#000000" backgroundColor="#FFC286"
+                            (onClick)="comprar()"></app-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
