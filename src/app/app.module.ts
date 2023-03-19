@@ -3,17 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BotonComponent } from './components/boton/boton.component';
+import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
-import { TextoComponent } from './components/texto/texto.component';
+import { TypoComponent } from './components/typo/typo.component';
+import { ImagePickerComponent } from './components/imagepicker/imagepicker.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { CustomCardComponent } from './components/custom-card/custom-card.component';
+import { ResumenProductoComponent } from './components/resumenproducto/resumenproducto.component';
 import { InstalacionComponent } from './components/instalacion/instalacion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BotonComponent,
-    TextoComponent,
+    ButtonComponent,
+    TypoComponent,
     InputComponent,
+    MenuComponent,
+    CustomCardComponent,
+    ResumenProductoComponent,
+    ImagePickerComponent,
     InstalacionComponent
   ],
   imports: [
@@ -24,3 +32,4 @@ import { InstalacionComponent } from './components/instalacion/instalacion.compo
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
