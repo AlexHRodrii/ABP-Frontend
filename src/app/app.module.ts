@@ -9,6 +9,7 @@ import { TypoComponent } from './components/typo/typo.component';
 import { ImagePickerComponent } from './components/imagepicker/imagepicker.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CustomCardComponent } from './components/custom-card/custom-card.component';
+import { ResumenProductoComponent } from './components/resumenproducto/resumenproducto.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CustomCardComponent } from './components/custom-card/custom-card.compon
     InputComponent,
     MenuComponent,
     CustomCardComponent,
+    ResumenProductoComponent
     ImagePickerComponent
   ],
   imports: [
@@ -28,3 +30,4 @@ import { CustomCardComponent } from './components/custom-card/custom-card.compon
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
