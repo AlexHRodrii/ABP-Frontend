@@ -10,6 +10,7 @@ import { ImagePickerComponent } from './components/imagepicker/imagepicker.compo
 import { MenuComponent } from './components/menu/menu.component';
 import { CustomCardComponent } from './components/custom-card/custom-card.component';
 import { ResumenProductoComponent } from './components/resumenproducto/resumenproducto.component';
+import { ResumenComponent } from './components/resumen/resumen.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +20,9 @@ import { ResumenProductoComponent } from './components/resumenproducto/resumenpr
     InputComponent,
     MenuComponent,
     CustomCardComponent,
-    ResumenProductoComponent
-    ImagePickerComponent
+    ResumenProductoComponent,
+    ImagePickerComponent,
+    ResumenComponent
   ],
   imports: [
     BrowserModule,
