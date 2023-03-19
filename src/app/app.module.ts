@@ -19,7 +19,7 @@ import { ResumenProductoComponent } from './components/resumenproducto/resumenpr
     InputComponent,
     MenuComponent,
     CustomCardComponent,
-    ResumenProductoComponent
+    ResumenProductoComponent,
     ImagePickerComponent
   ],
   imports: [
