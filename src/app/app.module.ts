@@ -9,6 +9,7 @@ import { TypoComponent } from './components/typo/typo.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CustomCardComponent } from './components/custom-card/custom-card.component';
 import { ResumenProductoComponent } from './components/resumenproducto/resumenproducto.component';
+import { InstalacionComponent } from './components/instalacion/instalacion.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
@@ -22,6 +23,9 @@ import { RegisterComponent } from './views/register/register.component';
     MenuComponent,
     CustomCardComponent,
     ResumenProductoComponent,
+    detalleInstalacion
+    ImagePickerComponent,
+    InstalacionComponent
     HomeComponent,
     LoginComponent,
     RegisterComponent

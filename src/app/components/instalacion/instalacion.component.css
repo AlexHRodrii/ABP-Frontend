@@ -1,0 +1,118 @@
+.detalleInstalacion {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+h2.title {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+.calendar {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.month {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.weekdays {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.day {
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.day:hover {
+  background-color: rgb(25, 187, 109);
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+.day.selected {
+  background-color: rgb(25, 187, 109);
+  color: #fff;
+}
+
+.pastweek {
+  color: gray;
+}
+
+.nextweek {
+  color: gray;
+}
+
+.hours {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.hour {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: rgb(235, 230, 230);
+}
+
+.hour.selected {
+  background-color: rgb(210, 169, 22);
+  color: #fff;
+}
+
+.hour:hover {
+  background-color: rgb(210, 169, 22);
+}
+
+.botonReserva {
+  display: flex;
+  justify-content: center;
+}
+
+.instalacion {
+  background-color: antiquewhite;
+}
+
+.detalles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.detallesTitulo {
+  background-color: rgb(15, 148, 15);
+  padding: 8px;
+  border-radius: 25px;
+  width: auto;
+}
+
+.container {
+  padding: 20px;
+}
+
+.instalaccionImagen {
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
