@@ -8,15 +8,15 @@ import { InputComponent } from './components/input/input.component';
 import { TypoComponent } from './components/typo/typo.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CustomCardComponent } from './components/custom-card/custom-card.component';
-import { ResumenProductoComponent } from './components/resumenproducto/resumenproducto.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { ResumenComponent } from './components/resumen/resumen.component';
-import { InstalacionComponent } from './components/instalacion/instalacion.component';
+import { ResumenProductoComponent } from './views/resumenproducto/resumenproducto.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { ResumenComponent } from './views/resumen/resumen.component';
+import { InstalacionComponent } from './views/instalacion/instalacion.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
-import { ListaInstalacionesComponent } from './components/lista-instalaciones/lista-instalaciones.component';
-import { ListaProductosComponent } from './components/lista-productos/lista-productos.component';
+import { ListaInstalacionesComponent } from './views/lista-instalaciones/lista-instalaciones.component';
+import { ListaProductosComponent } from './views/lista-productos/lista-productos.component';
 
 @NgModule({
   declarations: [
@@ -27,16 +27,13 @@ import { ListaProductosComponent } from './components/lista-productos/lista-prod
     MenuComponent,
     CustomCardComponent,
     ResumenProductoComponent,
-    ImagePickerComponent,
-    DashboardComponent
-    ResumenComponent
-    detalleInstalacion
-    ImagePickerComponent,
-    InstalacionComponent
+    DashboardComponent,
+    ResumenComponent,
+    InstalacionComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
-    ListaInstalacionesComponent
+    RegisterComponent,
+    ListaInstalacionesComponent,
     ListaProductosComponent,
   ],
   imports: [

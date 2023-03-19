@@ -1,8 +1,8 @@
 import { Component, Input, Output, EventEmitter} from '@angular/core';
-import {ButtonComponent} from "../button/button.component";
+import {ButtonComponent} from "../../components/button/button.component";
 
 @Component({
-  selector: 'app-resumencomponente',
+  selector: 'app-resumenproducto',
   templateUrl: './resumenproducto.component.html',
   styleUrls: ['./resumenproducto.component.css']
 })

@@ -1,3 +1,5 @@
+<div *ngIf="isUserLogged; then userLogged else userNotLogged"></div>
+<ng-template #userNotLogged>
 <div class="row p-0 align-items-center">
   <div class="col-md-4 ms-5">
     <div class="row ms-2">
@@ -34,3 +36,7 @@
     <img class="image" src="assets/home_image.jpg" alt="Home image">
   </div>
 </div>
+</ng-template>
+<ng-template #userLogged>
+  <app-dashboard></app-dashboard>
+</ng-template>
