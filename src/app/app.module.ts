@@ -8,6 +8,7 @@ import { InputComponent } from './components/input/input.component';
 import { TypoComponent } from './components/typo/typo.component';
 import { MenuComponent } from './menu/menu.component';
 import { CustomCardComponent } from './custom-card/custom-card.component';
+import { ImagePickerComponent } from './components/imagepicker/imagepicker.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CustomCardComponent } from './custom-card/custom-card.component';
     TypoComponent,
     InputComponent,
     MenuComponent,
-    CustomCardComponent
+    CustomCardComponent,
+    ImagePickerComponent
   ],
   imports: [
     BrowserModule,

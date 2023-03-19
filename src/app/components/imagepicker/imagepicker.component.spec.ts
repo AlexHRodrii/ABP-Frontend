@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ImagePickerComponent } from './imagepicker.component';
 
-describe('InputComponent', () => {
+describe('ImagePickerComponent', () => {
   let component: ImagePickerComponent;
   let fixture: ComponentFixture<ImagePickerComponent>;
 
