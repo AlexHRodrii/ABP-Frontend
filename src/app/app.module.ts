@@ -8,7 +8,7 @@ import { InputComponent } from './components/input/input.component';
 import { TypoComponent } from './components/typo/typo.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CustomCardComponent } from './components/custom-card/custom-card.component';
-import { ResumenProductoComponent } from './views/resumenproducto/resumenproducto.component';
+import { ResumenProductoComponent } from './components/resumenproducto/resumenproducto.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ResumenComponent } from './views/resumen/resumen.component';
 import { InstalacionComponent } from './views/instalacion/instalacion.component';

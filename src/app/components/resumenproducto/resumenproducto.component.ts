@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter} from '@angular/core';
-import {ButtonComponent} from "../../components/button/button.component";
+import {ButtonComponent} from "../button/button.component";
 
 @Component({
   selector: 'app-resumenproducto',
@@ -9,7 +9,6 @@ import {ButtonComponent} from "../../components/button/button.component";
 export class ResumenProductoComponent {
   @Input() title: string = '';
   @Input() photo: string = '';
-  @Input() button?: ButtonComponent;
   @Input() price: number = 0;
   @Input() quantity: number = 0;
   @Output() onClick: EventEmitter<any> = new EventEmitter<any>(); // se usa new EventEmitter
@@ -17,7 +16,4 @@ export class ResumenProductoComponent {
   handleClick() {
     this.onClick.emit();
   }
-  /*validar(event: Event) {
-    return this.validacion.test("a");
-  }*/
 }
