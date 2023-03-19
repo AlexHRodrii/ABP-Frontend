@@ -11,12 +11,12 @@
         </a>
       </div>
       <div class="col-md-auto">
-        <a routerLink="/example" routerLinkActive="activeItem">
+        <a routerLink="/productos" routerLinkActive="activeItem">
           <app-typo fontSize="1.5rem" data="Tienda"></app-typo>
         </a>
       </div>
       <div class="col-md-auto">
-        <a routerLink="/example" routerLinkActive="activeItem">
+        <a routerLink="/instalaciones" routerLinkActive="activeItem">
           <app-typo fontSize="1.5rem" data="Instalaciones"></app-typo>
         </a>
       </div>
@@ -25,12 +25,12 @@
           <div class="col-md-auto">
             <app-typo style="background-color: #FFFFFF; padding-left: 6px; padding-right: 6px; border-radius: 50%"
                       fontWeight="bold" [data]="itemsInCart.toString()"></app-typo>
-            <a routerLink="/example" routerLinkActive="activeItem">
+            <a routerLink="/cart" routerLinkActive="activeItem">
               <i class="fa-solid fa-cart-shopping" style="font-size: 3rem; cursor: pointer"></i>
             </a>
           </div>
           <div class="col-md-auto">
-            <div class="logoutButton gap-2">
+            <div class="logoutButton gap-2" (click)="logout()">
               <img src="assets/avatar.png" alt="User preview" width=50>
               <app-typo fontSize="1.2rem" data="Cerrar sesión"></app-typo>
             </div>
