@@ -13,6 +13,8 @@ import { InstalacionComponent } from './components/instalacion/instalacion.compo
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
+import { ListaInstalacionesComponent } from './components/lista-instalaciones/lista-instalaciones.component';
+import { ListaProductosComponent } from './components/lista-productos/lista-productos.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { RegisterComponent } from './views/register/register.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent
+    ListaInstalacionesComponent
+    ListaProductosComponent,
   ],
   imports: [
     BrowserModule,
