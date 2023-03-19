@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter} from '@angular/core';
-import {BotonComponent} from "../boton/boton.component";
+import {ButtonComponent} from "../button/button.component";
 
 @Component({
   selector: 'app-resumencomponente',
@@ -7,11 +7,11 @@ import {BotonComponent} from "../boton/boton.component";
   styleUrls: ['./resumenproducto.component.css']
 })
 export class ResumenProductoComponent {
-  @Input() titulo: string = '';
-  @Input() foto: string = '';
-  @Input() boton?: BotonComponent;
-  @Input() precio: number = 0;
-  @Input() cantidad: number = 0;
+  @Input() title: string = '';
+  @Input() photo: string = '';
+  @Input() button?: ButtonComponent;
+  @Input() price: number = 0;
+  @Input() quantity: number = 0;
   @Output() onClick: EventEmitter<any> = new EventEmitter<any>(); // se usa new EventEmitter
 
   handleClick() {

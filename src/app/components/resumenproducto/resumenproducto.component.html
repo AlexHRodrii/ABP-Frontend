@@ -1,37 +1,35 @@
-<style>*{border:1px solid red}</style>
 <div class="container" id="resumenproducto">
   <div class="container-fluid">
     <div class="row d-flex justify-content-between">
-      <div class="col-md-2">
+      <div class="col-md-2 mt-3">
         <div class="row">
           <div class="col-md-auto">
-            <img id="foto" src={{foto}}>
+            <img id="foto" src={{photo}}>
           </div>
         </div>
       </div>
-      <div class="col-md-auto">
+      <div class="col-md-auto mt-3">
         <div class="row">
-          <div class="col-md-auto"><app-texto texto={{titulo}} [sizeTexto]="2" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'bold'"></app-texto></div>
+          <div class="col-md-auto"><app-typo data={{title}} [fontSize]="'2'" [fontColor]= "'black'" [fontFamily]="'Helvetica'" [fontWeight]="'bold'"></app-typo></div>
         </div>
         <div class="row">
-          <div class="col-md-auto"><app-texto texto="P.V.P:" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto></div>
-          <div class="col-md-auto"><app-texto texto="{{precio}} €" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto></div>
+          <div class="col-md-auto"><app-typo [data]="'P.V.P:'" [fontSize]="'1'" [fontColor]="'black'" [fontFamily]="'Helvetica'" [fontWeight]="'normal'"></app-typo></div>
+          <div class="col-md-auto"><app-typo data= "{{price}} €" [fontSize]="'1'" [fontColor]="'black'" [fontFamily]="'Helvetica'" [fontWeight]="'normal'"></app-typo></div>
         </div>
         <div class="row">
-          <div class="col-md-auto"><app-texto texto="Cantidad:" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto></div>
-          <div class="col-md-auto"><app-texto texto="x {{cantidad}}" [sizeTexto]="1" color="black" fuenteTexto="Helvetica" [fuenteWeight]="'normal'"></app-texto></div>
+          <div class="col-md-auto"><app-typo [data]="'Cantidad:'" [fontSize]="'1'" [fontColor]="'black'" [fontFamily]="'Helvetica'" [fontWeight]="'normal'"></app-typo></div>
+          <div class="col-md-auto"><app-typo data="x {{quantity}}" [fontSize]="'1'" [fontColor]="'black'" [fontFamily]="'Helvetica'" [fontWeight]="'normal'"></app-typo></div>
         </div>
       </div>
       <div class="col-md-2 align-self-end">
-        <app-boton [fontSize]="'13px'"
-                   [font]="'Arial, sans-serif'"
-                   [colorLetra]="'white'"
-                   [colorFondo]="'#66806A'"
-                   [height]="'2rem'"
-                   [width]="'4rem'"
-                   [borde]="'oranged'"
+        <app-button fontSize="13px"
+                   fontFamily="Arial, sans-serif"
+                   textColor="white"
+                   backgroundColor="#66806A"
+                   buttonHeight="2rem"
+                   buttonWidth="4.5rem"
                    (click)="onClick.emit()"
-                   [texto]= "'Eliminar'"></app-boton>
+                   buttonText="Eliminar"></app-button>
       </div>
     </div>
   </div>
