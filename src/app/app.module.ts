@@ -3,15 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BotonComponent } from './components/boton/boton.component';
+import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
-import { TextoComponent } from './components/texto/texto.component';
+import { TypoComponent } from './components/typo/typo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BotonComponent
-    TextoComponent
+    ButtonComponent,
+    TypoComponent,
     InputComponent
   ],
   imports: [

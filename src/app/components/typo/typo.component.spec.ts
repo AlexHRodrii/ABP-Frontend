@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BotonComponent } from './boton.component';
+import { TypoComponent } from './typo.component';
 
-describe('BotonComponent', () => {
-  let component: BotonComponent;
-  let fixture: ComponentFixture<BotonComponent>;
+describe('TextoComponent', () => {
+  let component: TypoComponent;
+  let fixture: ComponentFixture<TypoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BotonComponent ]
+      declarations: [ TypoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(BotonComponent);
+    fixture = TestBed.createComponent(TypoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
